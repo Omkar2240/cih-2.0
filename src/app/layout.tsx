@@ -24,7 +24,7 @@ export const metadata: Metadata = {
     siteName: "Campus Innovate Hackathon",
     images: [
       {
-        url: "/navbar_logo.png",
+        url: "/codecrafterslogo.png",
         width: 800,
         height: 600,
         alt: "Campus Innovate Hackathon 2.0 Logo",
@@ -38,7 +38,7 @@ export const metadata: Metadata = {
     title: "Campus Innovate Hackathon 2.0",
     description: "Innovate, build, and transform. Compete for a 7K+ prize pool and electronic goodies at GHRCEM Nagpur.",
     creator: "@omkar_ramgirwar",
-    images: ["/navbar_logo.png"],
+    images: ["/codecrafterslogo.png"],
   },
   robots: {
     index: true,
