@@ -65,9 +65,11 @@ export function Navbar() {
 
           {/* CTA & Mobile Toggle */}
           <div className="flex items-center gap-4">
+            <Link target="_blank" href="https://forms.gle/HCPw5vzVD8vaPVi99">
             <button className="hidden md:block bg-white text-black px-6 py-2.5 rounded-full font-bold font-body text-xs md:text-sm hover:scale-105 transition-transform hover:shadow-[0_0_20px_rgba(255,255,255,0.3)]">
               Register Now
             </button>
+            </Link>
             
             {/* Mobile Menu Toggle */}
             <button 
@@ -109,6 +111,7 @@ export function Navbar() {
                 </motion.a>
               ))}
             </div>
+            <Link target="_blank" href="https://forms.gle/HCPw5vzVD8vaPVi99">
             <motion.button 
               initial={{ opacity: 0, y: 20 }}
               animate={{ opacity: 1, y: 0 }}
@@ -117,6 +120,7 @@ export function Navbar() {
             >
               Register Now
             </motion.button>
+            </Link>
           </motion.div>
         )}
       </AnimatePresence>
