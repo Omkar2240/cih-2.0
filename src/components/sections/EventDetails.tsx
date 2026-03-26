@@ -63,7 +63,7 @@ export function EventDetails() {
           />
           <DetailCard 
             title="Venue" 
-            value="Auditorium" 
+            value="GHRCEMN Auditorium" 
             desc="2nd Floor, Block A"
             delay={0.3}
           />
