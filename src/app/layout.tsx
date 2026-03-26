@@ -18,7 +18,7 @@ export const metadata: Metadata = {
   keywords: ["Hackathon", "Campus Innovate", "GHRCEM", "Nagpur", "Coding Competition", "Web3", "AI", "Tech Event", "Student Hackathon"],
   authors: [{ name: "Omkar Ramgirwar", url: "https://omkarramgirwar.vercel.app/" }],
   openGraph: {
-    title: "Campus Innovate Hackathon 2.0 | Build at the Bleeding Edge",
+    title: "Campus Innovate Hackathon 2.0 | Build at the Edge of Innovation",
     description: "Join the most prestigious 6-hour student hackathon. Compete for a 7K+ prize pool, learn from mentors, and build next-gen solutions at GHRCEM.",
     url: "https://campus-innovate.vercel.app",
     siteName: "Campus Innovate Hackathon",
