@@ -3,6 +3,7 @@
 import { useState, useEffect } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
 import Image from 'next/image';
+import Link from 'next/link';
 
 export function Navbar() {
   const [isScrolled, setIsScrolled] = useState(false);
@@ -33,6 +34,7 @@ export function Navbar() {
         <div className="container mx-auto px-4 lg:px-8 flex items-center justify-between">
           
           {/* Enhanced Logo */}
+          <Link href="/">
           <div className="flex items-center gap-3 cursor-pointer group">
             {/* <div className="relative flex items-center justify-center w-10 h-10 md:w-12 md:h-12 border border-white/10 rounded-xl overflow-hidden group-hover:border-neon-cyan/50 transition-colors shadow-[0_0_15px_rgba(0,112,243,0.3)]">
                <Image src="/navbar_logo.png" alt="CIH 2.0 Logo" fill className="object-cover" />
@@ -45,6 +47,7 @@ export function Navbar() {
               <span className="text-[8px] md:text-[9px] text-white/50 tracking-[0.25em] font-bold uppercase mt-1">Campus Innovate</span>
             </div>
           </div>
+          </Link>
 
           {/* Desktop Nav */}
           <nav className="hidden md:flex items-center gap-8 font-body text-sm text-white/70 font-bold tracking-wide">

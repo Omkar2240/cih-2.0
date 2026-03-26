@@ -55,7 +55,7 @@ export function TerrainFooter() {
           <div className="flex flex-col items-center lg:items-end gap-3">
             <div className="flex gap-6 text-sm text-white/70 font-body font-medium">
               <a href="#" className="hover:text-neon-cyan transition-colors">Instagram</a>
-              <a href="#" className="hover:text-neon-cyan transition-colors">WhatsApp</a>
+              <a href="https://chat.whatsapp.com/CauypSZQb7p7TGJxgqZGEq" className="hover:text-neon-cyan transition-colors">WhatsApp</a>
               <a href="/legal" className="hover:text-neon-cyan transition-colors">Legal & Privacy</a>
             </div>
             <div className="text-xs text-white/40 font-body">

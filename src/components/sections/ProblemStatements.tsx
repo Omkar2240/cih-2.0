@@ -26,7 +26,7 @@ const steps = [
     desc: "Once decided, fill out the official registration form with your team and payment details.",
     buttonText: "Register via Google Forms",
     buttonIcon: <FaGoogle />,
-    buttonLink: "#", // Replace with real Google form link
+    buttonLink: "https://forms.gle/HCPw5vzVD8vaPVi99", // Replace with real Google form link
     buttonStyle: "bg-blue-500/10 text-blue-400 border-blue-500/30 hover:bg-blue-500/20"
   },
   {
@@ -35,14 +35,14 @@ const steps = [
     desc: "Join our official WhatsApp group for all future updates, announcements, and queries.",
     buttonText: "Join WhatsApp Group",
     buttonIcon: <FaWhatsapp />,
-    buttonLink: "#", // Replace with real WhatsApp link
+    buttonLink: "https://chat.whatsapp.com/CauypSZQb7p7TGJxgqZGEq", // Replace with real WhatsApp link
     buttonStyle: "bg-green-500/10 text-green-400 border-green-500/30 hover:bg-green-500/20"
   }
 ];
 
 export function ProblemStatements() {
   return (
-    <section className="py-24 bg-black relative border-t border-white/5">
+    <section id="problems" className="py-24 bg-black relative border-t border-white/5">
       <div className="container mx-auto px-4 max-w-6xl">
         
         <div className="text-center mb-16">

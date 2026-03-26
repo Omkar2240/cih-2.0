@@ -6,6 +6,7 @@ import Image from 'next/image';
 import { FaTrophy, FaArrowRight } from 'react-icons/fa6';
 import { SiReact, SiNextdotjs, SiTailwindcss } from 'react-icons/si';
 import { Starfield } from '../ui/Starfield';
+import Link from 'next/link';
 
 export function Hero() {
   const [timeLeft, setTimeLeft] = useState({
@@ -16,7 +17,7 @@ export function Hero() {
   });
 
   useEffect(() => {
-    const targetDate = new Date('2026-04-06T23:59:59').getTime();
+    const targetDate = new Date('2026-04-05T23:59:59').getTime();
 
     const updateTimer = () => {
       const now = new Date().getTime();
@@ -156,12 +157,16 @@ export function Hero() {
           transition={{ duration: 0.6, delay: 0.6 }}
           className="flex flex-row items-center justify-center gap-3 mb-6 w-full"
         >
+          <Link target="_blank" href="https://forms.gle/HCPw5vzVD8vaPVi99">
           <button className="flex items-center justify-center gap-2 bg-[#0052FF] hover:bg-[#0042CC] text-white px-5 md:px-8 py-2.5 md:py-3.5 rounded-full font-bold font-body transition-all shadow-[0_0_20px_rgba(0,82,255,0.4)] text-xs md:text-sm flex-1 sm:flex-none">
             Register Now <FaArrowRight className="text-[10px] md:text-sm" />
           </button>
+          </Link>
+          <Link target="_blank" href="#">
           <button className="bg-white/5 text-white px-5 md:px-8 py-2.5 md:py-3.5 rounded-full font-bold font-body border border-white/10 transition-all hover:bg-white/10 backdrop-blur-md text-xs md:text-sm flex-1 sm:flex-none">
             View Problem Statements
           </button>
+          </Link>
         </motion.div>
 
         {/* Countdown directly under buttons for visibility on small screens */}
@@ -172,7 +177,7 @@ export function Hero() {
           className="text-center w-full px-2"
         >
           <p className="text-white/70 text-[10px] md:text-xs lg:text-sm font-medium">
-            Registration closes Mon, 6th April 2026 - Ends in : 
+            Registration closes Sun, 5th April 2026 - Ends in : 
             <span className="font-bold ml-1 md:ml-2">
               <span className="text-amber-500">{String(timeLeft.days).padStart(2, '0')}D</span> 
               <span className="text-amber-500 mx-1">{String(timeLeft.hours).padStart(2, '0')}H</span> 

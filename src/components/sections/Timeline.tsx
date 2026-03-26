@@ -39,7 +39,7 @@ const timeline = [
 
 export function Timeline() {
   return (
-    <section className="py-24 bg-[#020202] relative overflow-hidden">
+    <section id="timeline" className="py-24 bg-[#020202] relative overflow-hidden">
       <div className="container mx-auto px-4 max-w-4xl text-center">
         <motion.h2 
           initial={{ opacity: 0, y: 20 }}
