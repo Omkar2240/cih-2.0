@@ -125,11 +125,17 @@ export function Hero() {
               height={30} 
               className="object-contain opacity-90"
             />
-            {/* <div className="w-px h-6 bg-white/10 hidden sm:block" />
+            <div className="w-px h-6 bg-white/10 hidden sm:block" />
             <div className="flex items-center gap-2 text-lg md:text-xl font-bold font-body">
-              <SiReact className="text-[#61DAFB]" /> React
+               <Image 
+              src="/grras_solution_logo.png" 
+              alt="InfoCepts" 
+              width={50} 
+              height={10} 
+              className="object-contain opacity-90"
+            />
             </div>
-            <div className="flex flex-col items-start gap-1">
+            {/* <div className="flex flex-col items-start gap-1">
               <div className="flex items-center gap-2 text-xs md:text-sm font-bold">
                 <SiNextdotjs className="text-white" /> Next.js
               </div>
