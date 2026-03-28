@@ -6,6 +6,7 @@ import { InclusionChecklist } from "@/components/sections/InclusionChecklist";
 import { FAQ } from "@/components/sections/FAQ";
 import { TerrainFooter } from "@/components/sections/TerrainFooter";
 import { Navbar } from "@/components/ui/Navbar";
+import { ExploreMoreEvents } from "@/components/sections/ExploreMoreEvents";
 
 export default function Home() {
   return (
@@ -17,6 +18,7 @@ export default function Home() {
       <Timeline />
       <ProblemStatements />
       <InclusionChecklist />
+      <ExploreMoreEvents />
       <FAQ />
       <TerrainFooter />
     </main>

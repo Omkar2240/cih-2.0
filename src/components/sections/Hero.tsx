@@ -152,7 +152,7 @@ export function Hero() {
         >
           <FaTrophy className="text-gray-300 text-sm md:text-xl shrink-0" />
           <span className="text-[10px] sm:text-xs md:text-sm text-white/90 font-medium">
-            Winners will get cash prizes and exciting goodies
+            Winners will get Cash Prizes and Exciting Gadgets
           </span>
         </motion.div>
 
@@ -168,7 +168,7 @@ export function Hero() {
             Register Now <FaArrowRight className="text-[10px] md:text-sm" />
           </button>
           </Link>
-          <Link target="_blank" href="#">
+          <Link target="_blank" href="https://drive.google.com/file/d/1_7r2VngFoIAYQS4x8p6MbtC3FqyDAChB/view?usp=sharing">
           <button className="bg-white/5 text-white px-5 md:px-8 py-2.5 md:py-3.5 rounded-full font-bold font-body border border-white/10 transition-all hover:bg-white/10 backdrop-blur-md text-xs md:text-sm flex-1 sm:flex-none">
             View Problem Statements
           </button>

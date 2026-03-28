@@ -2,6 +2,7 @@
 
 import { motion } from 'framer-motion';
 import Image from 'next/image';
+import Link from 'next/link';
 
 export function TerrainFooter() {
   return (
@@ -30,7 +31,7 @@ export function TerrainFooter() {
             Won&apos;t Wait.
           </span> Will You?
         </motion.h2>
-
+        <Link href="https://forms.gle/HCPw5vzVD8vaPVi99">
         <motion.button 
           initial={{ opacity: 0, scale: 0.9 }}
           whileInView={{ opacity: 1, scale: 1 }}
@@ -38,8 +39,9 @@ export function TerrainFooter() {
           transition={{ delay: 0.2 }}
           className="bg-neon-cyan text-black px-10 py-4 rounded-full font-bold font-body text-lg transition-transform hover:scale-105 shadow-[0_0_30px_rgba(0,112,243,0.6)]"
         >
-          Apply Now
+          Register Now
         </motion.button>
+        </Link>
       </div>
 
       <div className="relative z-10 border-t border-white/10 bg-black/50 backdrop-blur-md py-8">

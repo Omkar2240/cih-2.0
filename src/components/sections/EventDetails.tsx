@@ -69,8 +69,8 @@ export function EventDetails() {
           />
           <DetailCard 
             title="Prizes" 
-            value="7K+" 
-            desc="Prize pool & electronic goodies"
+            value="12K+" 
+            desc="Worth of Cash Prizes & Electronic Gadgets"
             delay={0.4}
           />
         </div>

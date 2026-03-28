@@ -11,7 +11,7 @@ const steps = [
     desc: "Download and read the official problem statements. Find a track that sparks your interest.",
     buttonText: "View Problem Statements",
     buttonIcon: <FaFilePdf />,
-    buttonLink: "#", // Replace with real PDF link
+    buttonLink: "https://drive.google.com/file/d/1_7r2VngFoIAYQS4x8p6MbtC3FqyDAChB/view?usp=sharing", // Replace with real PDF link
     buttonStyle: "bg-red-500/10 text-red-400 border-red-500/30 hover:bg-red-500/20"
   },
   {
