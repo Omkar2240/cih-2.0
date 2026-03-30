@@ -1,5 +1,6 @@
 'use client';
 
+import { useState } from 'react';
 import { motion } from 'framer-motion';
 import Image from 'next/image';
 import Link from 'next/link';
@@ -14,6 +15,8 @@ const events = [
 ];
 
 export function ExploreMoreEvents() {
+  const [hoveredEvent, setHoveredEvent] = useState<null | (typeof events)[number]>(null);
+
   return (
     <section className="relative py-24 border-t border-white/5 bg-black" id="explore-events">
       <div className="container mx-auto px-4 max-w-5xl">
@@ -39,7 +42,13 @@ export function ExploreMoreEvents() {
               className="mx-auto w-full max-w-sm"
             >
               {/* Wraps Image and Title in single Link block */}
-              <Link href={event.link} target="_blank" className="group block h-full">
+              <Link
+                href={event.link}
+                target="_blank"
+                className="group block h-full"
+                onMouseEnter={() => setHoveredEvent(event)}
+                onMouseLeave={() => setHoveredEvent((current) => (current?.id === event.id ? null : current))}
+              >
                 <div className="relative h-64 md:h-80 w-full overflow-hidden rounded-xl border border-white/10 bg-[#050505] transition-all duration-300 group-hover:border-neon-cyan/50 shadow-lg group-hover:shadow-neon-cyan/20 cursor-pointer">
                   
                   {/* Image overlay to make text readable */}
@@ -65,6 +74,27 @@ export function ExploreMoreEvents() {
           ))}
         </div>
       </div>
+
+      {/* Hover popup with full poster image (desktop hover only) */}
+      {hoveredEvent && (
+        <div className="pointer-events-none fixed inset-0 z-[70] hidden md:flex items-center justify-center bg-black/40 backdrop-blur-[2px]">
+          <motion.div
+            initial={{ opacity: 0, scale: 0.94, y: 12 }}
+            animate={{ opacity: 1, scale: 1, y: 0 }}
+            exit={{ opacity: 0, scale: 0.94, y: 12 }}
+            transition={{ duration: 0.2 }}
+            className="relative h-[78vh] w-[88vw] max-w-4xl rounded-2xl border border-white/20 bg-black/90 shadow-[0_25px_80px_rgba(0,0,0,0.75)]"
+          >
+            <Image
+              src={hoveredEvent.image}
+              alt={`${hoveredEvent.title} full poster`}
+              fill
+              className="object-contain p-4"
+              sizes="(max-width: 768px) 0px, 88vw"
+            />
+          </motion.div>
+        </div>
+      )}
     </section>
   );
 }
