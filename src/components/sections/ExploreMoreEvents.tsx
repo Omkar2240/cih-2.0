@@ -9,7 +9,7 @@ const events = [
     id: 1,
     title: "Tech Hunt",
     image: "/event-1.jpeg", // Replace with your actual image
-    link: "https://example.com/event" // Replace with your actual link
+    link: "https://forms.gle/XpnSvUNfRLqnoPPY9" // Replace with your actual link
   }
 ];
 
