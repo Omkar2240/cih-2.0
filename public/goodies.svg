@@ -1,0 +1,29 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="800" viewBox="0 0 1200 800" role="img" aria-labelledby="title desc">
+  <title id="title">Hackathon Goodies</title>
+  <desc id="desc">Stylized goodies gift box illustration</desc>
+  <defs>
+    <linearGradient id="bg2" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#140f0a"/>
+      <stop offset="100%" stop-color="#0f0f0f"/>
+    </linearGradient>
+    <linearGradient id="amber" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#ffd36b"/>
+      <stop offset="100%" stop-color="#fadb5f"/>
+    </linearGradient>
+  </defs>
+  <rect width="1200" height="800" rx="36" fill="url(#bg2)"/>
+  <g opacity="0.3">
+    <circle cx="210" cy="650" r="150" fill="#fadb5f"/>
+    <circle cx="980" cy="160" r="130" fill="#0070f3"/>
+  </g>
+  <g transform="translate(320 170)">
+    <rect x="0" y="170" width="560" height="320" rx="28" fill="#1e1a12" stroke="#7f6b37" stroke-width="6"/>
+    <rect x="0" y="140" width="560" height="90" rx="24" fill="#2a2417"/>
+    <rect x="250" y="140" width="60" height="350" rx="10" fill="url(#amber)"/>
+    <rect x="0" y="265" width="560" height="50" rx="8" fill="url(#amber)" opacity="0.85"/>
+    <path d="M250 140 C205 85 245 45 280 65 C315 45 355 85 310 140 Z" fill="#f9e090"/>
+    <path d="M310 140 C355 85 315 45 280 65 C245 45 205 85 250 140 Z" fill="#f6ca62"/>
+    <text x="30" y="90" fill="#fff1cb" font-family="Arial, sans-serif" font-size="42" font-weight="700">Goodies</text>
+    <text x="32" y="540" fill="#ead7a3" font-family="Arial, sans-serif" font-size="28" font-weight="600">Exclusive CIH Swag + Surprise Packs</text>
+  </g>
+</svg>

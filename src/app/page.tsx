@@ -7,6 +7,7 @@ import { FAQ } from "@/components/sections/FAQ";
 import { TerrainFooter } from "@/components/sections/TerrainFooter";
 import { Navbar } from "@/components/ui/Navbar";
 import { ExploreMoreEvents } from "@/components/sections/ExploreMoreEvents";
+import { HackathonPrivileges } from "@/components/sections/HackathonPrivileges";
 
 export default function Home() {
   return (
@@ -18,6 +19,7 @@ export default function Home() {
       <Timeline />
       <ProblemStatements />
       <InclusionChecklist />
+      <HackathonPrivileges />
       <ExploreMoreEvents />
       <FAQ />
       <TerrainFooter />
