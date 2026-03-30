@@ -1,36 +1,115 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# Campus Innovate Hackathon 2.0 Website
 
-## Getting Started
+Official event website for **Campus Innovate Hackathon 2.0 (CIH 2.0)** at GHRCEMN.
 
-First, run the development server:
+This site is a modern, animated landing experience built with Next.js App Router and Tailwind CSS, designed to help students:
+
+- Understand the event details and timeline
+- Review participation steps and problem statements
+- Register their team
+- Read official rules and legal/privacy information
+
+## Live Event Context
+
+- Event: Campus Innovate Hackathon 2.0
+- Format: 6-hour on-campus hackathon
+- Venue: GHRCEMN Auditorium, Nagpur
+
+## Tech Stack
+
+- Next.js 16 (App Router)
+- React 19
+- TypeScript
+- Tailwind CSS v4
+- Framer Motion (animations)
+- React Icons
+
+## Project Structure
+
+```text
+src/
+	app/
+		page.tsx           # Home page composition
+		layout.tsx         # Global layout + metadata
+		rules/page.tsx     # Rules page
+		legal/page.tsx     # Legal & privacy page
+		globals.css        # Theme tokens + global styles
+	components/
+		sections/          # Landing page sections
+		ui/                # Shared UI (Navbar, Starfield, etc.)
+public/                # Static assets (logos, hero images, terrain, etc.)
+```
+
+## Main Sections on Home Page
+
+- Hero with countdown and primary CTAs
+- Event details (date, time, venue, prizes)
+- Phase-wise timeline
+- How to participate flow
+- Inclusion checklist
+- Explore more events
+- FAQ
+- CTA footer with important links
+
+## Local Development
+
+### 1. Install dependencies
+
+```bash
+npm install
+```
+
+### 2. Start development server
 
 ```bash
 npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+### 3. Open in browser
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+Visit `http://localhost:3000`
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+## Available Scripts
 
-## Learn More
+```bash
+npm run dev    # Start dev server
+npm run build  # Production build
+npm run start  # Run production server
+npm run lint   # Run ESLint
+```
 
-To learn more about Next.js, take a look at the following resources:
+## Event Content Customization
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+Most event copy and links are hardcoded in section components. Common updates:
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+- Hero countdown date and CTA links: `src/components/sections/Hero.tsx`
+- Event details cards: `src/components/sections/EventDetails.tsx`
+- Participation steps and registration/WhatsApp links: `src/components/sections/ProblemStatements.tsx`
+- FAQ content: `src/components/sections/FAQ.tsx`
+- Explore more events cards: `src/components/sections/ExploreMoreEvents.tsx`
+- Rules page content: `src/app/rules/page.tsx`
+- Legal page content: `src/app/legal/page.tsx`
 
-## Deploy on Vercel
+## Design System Notes
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+Theme tokens and global utilities are defined in `src/app/globals.css`:
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+- Neon cyan and amber accent palette
+- Display and body font variables
+- Starfield-like background utility (`.bg-stars`)
+
+## Deployment
+
+This project can be deployed on any platform that supports Next.js (recommended: Vercel).
+
+Basic production flow:
+
+```bash
+npm run build
+npm run start
+```
+
+## Credits
+
+- Website developer: Omkar Ramgirwar
+- Organized by: GHRCEMN / CodeCrafters
