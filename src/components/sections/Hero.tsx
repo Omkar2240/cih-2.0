@@ -152,7 +152,7 @@ export function Hero() {
         >
           <FaTrophy className="text-gray-300 text-sm md:text-xl shrink-0" />
           <span className="text-[10px] sm:text-xs md:text-sm text-white/90 font-medium">
-            Trophy, Certificate, Prize Pool, Electronic Gadgets, Goodies, Refreshment, Cooler, Extension Box, Wifi
+            Winners will get Trophy, Cash Prizes, and Electronic gadgets
           </span>
         </motion.div>
 

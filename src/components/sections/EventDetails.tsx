@@ -48,7 +48,7 @@ export function EventDetails() {
 
       {/* Detail Boxes Grid below the image */}
       <div className="container mx-auto px-4 max-w-5xl">
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-5 gap-6">
           <DetailCard 
             title="Date" 
             value="7 April" 
@@ -72,6 +72,12 @@ export function EventDetails() {
             value="12K+" 
             desc="Cash Prize Pool, Trophy, Certificates, Electronic Gadgets & Goodies"
             delay={0.4}
+          />
+          <DetailCard 
+            title="Entry Fee" 
+            value="₹400" 
+            desc="Per team · Covers food, logistics & goodies"
+            delay={0.5}
           />
         </div>
       </div>
