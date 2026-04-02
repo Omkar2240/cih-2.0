@@ -118,14 +118,14 @@ export function Hero() {
         >
           <p className="text-[10px] md:text-xs font-bold text-white/40 tracking-[0.2em] uppercase mb-4">Sponsored By</p>
           <div className="flex flex-wrap items-center gap-4 md:gap-8 text-white/70 justify-center">
-            <Image 
+            {/* <Image 
               src="/infoceptslogo.png" 
               alt="InfoCepts" 
               width={100} 
               height={30} 
               className="object-contain opacity-90"
             />
-            <div className="w-px h-6 bg-white/10 hidden sm:block" />
+            <div className="w-px h-6 bg-white/10 hidden sm:block" /> */}
             <div className="flex items-center gap-2 text-lg md:text-xl font-bold font-body">
                <Image 
               src="/grras_solution_logo.png" 
