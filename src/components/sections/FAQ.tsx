@@ -42,7 +42,7 @@ const faqs = [
   },
   {
     q: "What are the prizes?",
-    a: "The prize pool is ₹12,000+, including cash prizes for 1st, 2nd, and 3rd place, along with a trophy, certificates, electronic gadgets (laptop stands, pendrives), and exclusive CIH goodies for all participants. Full prize breakdown will be revealed soon!"
+    a: "The prize pool is ₹12,000, including cash prizes for 1st, 2nd, and 3rd place, along with a trophy, certificates. Full prize breakdown will be revealed soon!"
   },
   {
     q: "Will participants receive certificates?",
