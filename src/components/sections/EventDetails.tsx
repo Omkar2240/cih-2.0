@@ -69,8 +69,8 @@ export function EventDetails() {
           />
           <DetailCard 
             title="Prizes" 
-            value="12K+" 
-            desc="Cash Prize Pool, Trophy, Certificates, Electronic Gadgets & Goodies"
+            value="12K" 
+            desc="Cash Prize Pool, Trophy & Certificates"
             delay={0.4}
           />
           <DetailCard 
