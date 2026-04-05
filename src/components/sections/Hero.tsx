@@ -17,7 +17,7 @@ export function Hero() {
   });
 
   useEffect(() => {
-    const targetDate = new Date('2026-04-05T23:59:59').getTime();
+    const targetDate = new Date('2026-04-06T23:59:59').getTime();
 
     const updateTimer = () => {
       const now = new Date().getTime();
