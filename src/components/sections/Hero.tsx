@@ -183,7 +183,7 @@ export function Hero() {
           className="text-center w-full px-2"
         >
           <p className="text-white/70 text-[10px] md:text-xs lg:text-sm font-medium">
-            Registration closes Sun, 5th April 2026 - Ends in : 
+            Registration closes Mon, 6th April 2026 - Ends in : 
             <span className="font-bold ml-1 md:ml-2">
               <span className="text-amber-500">{String(timeLeft.days).padStart(2, '0')}D</span> 
               <span className="text-amber-500 mx-1">{String(timeLeft.hours).padStart(2, '0')}H</span> 
