@@ -60,9 +60,6 @@ export function TerrainFooter() {
               <a href="https://chat.whatsapp.com/CauypSZQb7p7TGJxgqZGEq" className="hover:text-neon-cyan transition-colors">WhatsApp</a>
               <a href="/legal" className="hover:text-neon-cyan transition-colors">Legal & Privacy</a>
             </div>
-            <div className="text-xs text-white/40 font-body">
-              Website developed by <a href="https://omkarramgirwar.vercel.app/" target="_blank" rel="noopener noreferrer" className="text-neon-cyan hover:underline hover:text-white transition-colors">Omkar Ramgirwar</a>
-            </div>
           </div>
         </div>
       </div>
